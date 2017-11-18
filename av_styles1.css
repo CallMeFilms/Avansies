@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/*
+   Avansies Home Style Sheet
+
+   Filename: av_styles1.css
+*/
+/*##########################*/
+/* HTML and Body Styles */
+/*#########################*/
+
+html {
+  height: 100%;
+  /*background-color: red;*/
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 15px 0 25px, -15px 0 25px;
+}
+/*###################*/
+/* Header Styles */
+/*###################*/
+
+header nav {
+  padding: 25px 0;
+}
+
+h1#avanHeader {
+  font-size: 5em;
+}
+
+nav#headerNav {
+}
+
+nav#headerNav ul {
+  display: -webkit-flex;
+  display: flex;
+
+  flex: row nowrap;
+
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+/*###############################*/
+/* Game of the Month Styles */
+/*###############################*/
+
+section#gameOTMonth {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: column wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 25px auto;
+  width: 50%;
+}
+
+section#gameOTMonth h2, section#gameOTMonth p {
+  text-align: center;
+}
+
+section#gameOTMonth h2 {
+  padding-bottom: 10px;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+section#gameOTMonth h3 {
+  padding: 10px 0 15px;
+  font-size: 2.5em;
+}
+
+section#gameOTMonth p {
+  width: 75%;
+}
+
+/*###########################*/
+/* Middle Section Styles */
+/*###########################*/
+
+section#middle {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: row wrap;
+
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+section#middle aside {
+  width: 15%;
+}
+
+section#middleMiddle {
+  padding: 0 25px;
+  width: 70%;
+}
+
+/*##################*/
+/* Links Panel */
+/*##################*/
+
+aside#linksPan {
+  text-align: center;
+}
+
+aside#linksPan h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+aside#linksPan section {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: column wrap;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside#linksPan section a {
+  margin: 5px 0;
+  padding: 20px 0;
+}
+
+/*########################*/
+/* News Board Styles */
+/*########################*/
+
+section#newsBoard {
+  margin-bottom: 10px;
+}
+
+section#newsBoard h2 {
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+
+section#newsPosts {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: column wrap;
+
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+section#newsPosts section.newsPost {
+  padding-bottom: 10px;
+}
+
+section#newsPosts section.newsPost:last-of-type {
+  padding: 0;
+}
+
+section#newsPosts section.newsPost h3 {
+  padding: 10px 0;
+  font-size: 1.5em;
+}
+
+/*########################*/
+/* Affiliates Styles */
+/*########################*/
+
+section#affiliates {
+  margin-top: 10px;
+  width: 50%;
+}
+
+section#affiliates h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+section#affiliates p {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+/*####################*/
+/* Events Styles */
+/*####################*/
+
+aside#eventsPan h2 {
+  padding-bottom: 5px;
+  font-size: 2em;
+}
+
+section#events {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: column wrap;
+
+  justify-content: space-between;
+}
+
+section#events h3 {
+  padding: 5px 0;
+  font-size: 1.5em;
+}
+
+/*####################*/
+/* Footer Styles */
+/*####################*/
+
+footer {
+  padding: 25px;
+  text-align: center;
+}
