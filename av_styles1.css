@@ -24,6 +24,16 @@ body {
 /* Header Styles */
 /*###################*/
 
+h1#avanHeader {
+  padding: 25px;
+  width: 100%;
+  color: #155DE9;
+  text-align: center;
+  font-family: georgia, palatino, book antiqua, palatino linotype, serif;
+  letter-spacing: 0.25em;
+  text-decoration: underline;
+}
+
 header nav {
   padding: 25px 0;
 }
@@ -44,6 +54,29 @@ nav#headerNav ul {
   justify-content: space-around;
   align-items: stretch;
 }
+
+nav#headerNav ul a {
+  padding: 10px 0;
+  width: 16.67%;
+  background-color: #DBDBDB;
+  border: 2px solid black;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+
+nav#headerNav ul a:hover {
+  background-color: white;
+  color: gray;
+}
+
+/*nav#headerNav ul a:first-of-type {
+  border-left: none;
+}
+
+nav#headerNav ul a:last-of-type {
+  border-right: none;
+}*/
 
 /*###############################*/
 /* Game of the Month Styles */
