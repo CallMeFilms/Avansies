@@ -37,19 +37,16 @@ h1#avanHeader {
   padding: 25px;
   width: 100%;
   color: #328181;
+  font-size: 5em;
+  letter-spacing: 0.25em;
   text-align: center;
   font-family: georgia, palatino, book antiqua, palatino linotype, serif;
-  letter-spacing: 0.25em;
   text-decoration: underline;
+  text-shadow: 2.5px 2.5px 5px black;
 }
 
 header nav {
   margin: 25px auto;
-}
-
-h1#avanHeader {
-  font-size: 5em;
-  text-shadow: 2.5px 2.5px 5px black;
 }
 
 nav#headerNav ul {
@@ -65,9 +62,10 @@ nav#headerNav ul {
 nav#headerNav ul a {
   padding: 10px 0;
   width: 16.67%;
-  background-color: #328181;
+  background-color: #6DAEAE;
   border: 2px solid black;
-  color: #99CCCC;
+  color: #235F5F;
+  font-family: monospace;
   text-align: center;
   font-size: 1.5em;
 }
@@ -135,8 +133,7 @@ section#gameOTMonth h2 {
   font-size: 3em;
   line-height: 1em;
   font-family: monospace;
-  text-decoration-line: underline;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.025em;
 }
 
 section#gameOTMonth img {
