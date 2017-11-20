@@ -49,9 +49,7 @@ header nav {
 
 h1#avanHeader {
   font-size: 5em;
-}
-
-nav#headerNav {
+  text-shadow: 2.5px 2.5px 5px black;
 }
 
 nav#headerNav ul {
@@ -75,6 +73,7 @@ nav#headerNav ul a {
 }
 
 nav#headerNav ul a:hover {
+  position: relative;
   background-color: #4CBABA;
   color: #235F5F;
 }
@@ -219,8 +218,7 @@ aside#linksPan section a {
   text-emphasis: bold;
   text-decoration-line: none;
   background-color: #99CCCC;
-  border-radius: 10px;
-  box-shadow: black 5px 5px 0;
+  box-shadow: #235F5F 0 5px 0, #235F5F 5px 0 0, #235F5F 5px 5px 0;
 }
 
 aside#linksPan section a:hover, aside#linksPan section a:active {
