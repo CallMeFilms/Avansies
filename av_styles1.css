@@ -9,15 +9,24 @@
 /* HTML and Body Styles */
 /*#########################*/
 
+@font-face {
+  font-family: 'Minecrafter-Alt';
+  src: url('Minecraft.Alt.tff') format('truetype'),
+  url('minecrafter.alt-webfont.woff') format('woff');
+}
+
 html {
   height: 100%;
+  background: url(bitnature.gif) 100% / cover fixed no-repeat;
   /*background-color: red;*/
 }
 
 body {
   margin: 0 auto;
+  padding: 0 25px;
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(150, 150, 150, 0.75);
+  background-color: #99CCCC;
   box-shadow: 15px 0 25px, -15px 0 25px;
 }
 /*###################*/
@@ -27,7 +36,7 @@ body {
 h1#avanHeader {
   padding: 25px;
   width: 100%;
-  color: #155DE9;
+  color: #328181;
   text-align: center;
   font-family: georgia, palatino, book antiqua, palatino linotype, serif;
   letter-spacing: 0.25em;
@@ -35,7 +44,7 @@ h1#avanHeader {
 }
 
 header nav {
-  padding: 25px 0;
+  margin: 25px auto;
 }
 
 h1#avanHeader {
@@ -58,16 +67,16 @@ nav#headerNav ul {
 nav#headerNav ul a {
   padding: 10px 0;
   width: 16.67%;
-  background-color: #DBDBDB;
+  background-color: #328181;
   border: 2px solid black;
+  color: #99CCCC;
   text-align: center;
-  color: black;
   font-size: 1.5em;
 }
 
 nav#headerNav ul a:hover {
-  background-color: white;
-  color: gray;
+  background-color: #4CBABA;
+  color: #235F5F;
 }
 
 /*nav#headerNav ul a:first-of-type {
@@ -89,10 +98,34 @@ section#gameOTMonth {
   flex-flow: column wrap;
 
   justify-content: center;
+
+  margin: 0 auto 25px;
+  padding: 5px 10px;
+  color: #99CCCC;
+  background-color: #328181;
+  border: 15px solid #235F5F;
+  border-radius: 25px;
+}
+
+section#game {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: row nowrap;
+
   align-items: center;
 
-  margin: 25px auto;
-  width: 50%;
+  margin: 10px 0;
+  width: 100%;
+}
+
+section#gameText {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: column nowrap;
+
+  align-items: center;
 }
 
 section#gameOTMonth h2, section#gameOTMonth p {
@@ -100,18 +133,29 @@ section#gameOTMonth h2, section#gameOTMonth p {
 }
 
 section#gameOTMonth h2 {
-  padding-bottom: 10px;
   font-size: 3em;
   line-height: 1em;
+  font-family: monospace;
+  text-decoration-line: underline;
+  letter-spacing: 0.1em;
+}
+
+section#gameOTMonth img {
+  width: 50%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 section#gameOTMonth h3 {
   padding: 10px 0 15px;
-  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Minecrafter-Alt', sans-serif;
+  letter-spacing: 0.25em;
 }
 
 section#gameOTMonth p {
   width: 75%;
+  font-size: 1.25em;
 }
 
 /*###########################*/
@@ -125,7 +169,7 @@ section#middle {
   flex-flow: row wrap;
 
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 section#middle aside {
@@ -142,7 +186,12 @@ section#middleMiddle {
 /*##################*/
 
 aside#linksPan {
+  padding: 10px 0;
+  color: #99CCCC;
   text-align: center;
+  background-color: #328181;
+  border: 5px solid #235F5F;
+  border-radius: 10px;
 }
 
 aside#linksPan h2 {
@@ -162,7 +211,21 @@ aside#linksPan section {
 
 aside#linksPan section a {
   margin: 5px 0;
-  padding: 20px 0;
+  padding: 5px 5px;
+  width: 75%;
+  color: #328181;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-emphasis: bold;
+  text-decoration-line: none;
+  background-color: #99CCCC;
+  border-radius: 10px;
+  box-shadow: black 5px 5px 0;
+}
+
+aside#linksPan section a:hover, aside#linksPan section a:active {
+  box-shadow: none;
+  transform: translate(5px, 5px);
 }
 
 /*########################*/
@@ -171,6 +234,11 @@ aside#linksPan section a {
 
 section#newsBoard {
   margin-bottom: 10px;
+  padding: 10px;
+  color: #99CCCC;
+  background-color: #328181;
+  border: 5px solid #235F5F;
+  border-radius: 10px;
 }
 
 section#newsBoard h2 {
@@ -189,7 +257,7 @@ section#newsPosts {
 }
 
 section#newsPosts section.newsPost {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 section#newsPosts section.newsPost:last-of-type {
@@ -207,7 +275,11 @@ section#newsPosts section.newsPost h3 {
 
 section#affiliates {
   margin-top: 10px;
-  width: 50%;
+  padding: 10px;
+  color: #99CCCC;
+  background-color: #328181;
+  border: 5px solid #235F5F;
+  border-radius: 10px;
 }
 
 section#affiliates h2 {
@@ -220,9 +292,21 @@ section#affiliates p {
   line-height: 1em;
 }
 
+section#affiliates a {
+  color: #99CCCC;
+}
+
 /*####################*/
 /* Events Styles */
 /*####################*/
+
+aside#eventsPan {
+  padding: 10px;
+  color: #99CCCC;
+  background-color: #328181;
+  border: 5px solid #235F5F;
+  border-radius: 10px;
+}
 
 aside#eventsPan h2 {
   padding-bottom: 5px;
@@ -238,9 +322,18 @@ section#events {
   justify-content: space-between;
 }
 
+section.event {
+  margin-bottom: 10px;
+}
+
+section.event:last-of-type {
+  margin-bottom: 0;
+}
+
 section#events h3 {
   padding: 5px 0;
   font-size: 1.5em;
+  line-height: 1em;
 }
 
 /*####################*/
