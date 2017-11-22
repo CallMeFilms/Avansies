@@ -102,6 +102,7 @@ section#gameOTMonth {
   background-color: #328181;
   border: 15px solid #235F5F;
   border-radius: 25px;
+  box-shadow: black 0 0 15px;
 }
 
 section#game {
@@ -137,8 +138,7 @@ section#gameOTMonth h2 {
 }
 
 section#gameOTMonth img {
-  width: 50%;
-  max-width: 100%;
+  width: 25%;
   border-radius: 10px;
 }
 
@@ -166,15 +166,12 @@ section#middle {
 
   justify-content: space-between;
   align-items: flex-start;
+
+  padding: 10px;
 }
 
 section#middle aside {
   width: 15%;
-}
-
-section#middleMiddle {
-  padding: 0 25px;
-  width: 70%;
 }
 
 /*##################*/
@@ -188,6 +185,9 @@ aside#linksPan {
   background-color: #328181;
   border: 5px solid #235F5F;
   border-radius: 10px;
+  box-shadow: black 0 0 15px;
+
+  align-self: flex-start;
 }
 
 aside#linksPan h2 {
@@ -211,8 +211,7 @@ aside#linksPan section a {
   width: 75%;
   color: #328181;
   font-size: 1.5em;
-  line-height: 1.5em;
-  text-emphasis: bold;
+  line-height: 1.25em;
   text-decoration-line: none;
   background-color: #99CCCC;
   box-shadow: #235F5F 0 5px 0, #235F5F 5px 0 0, #235F5F 5px 5px 0;
@@ -221,6 +220,22 @@ aside#linksPan section a {
 aside#linksPan section a:hover, aside#linksPan section a:active {
   box-shadow: none;
   transform: translate(5px, 5px);
+}
+
+/*################################*/
+/* Middle of Middle Section */
+/*################################*/
+
+section#middleMiddle {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: column;
+
+  justify-content: space-between;
+
+  padding: 0 25px;
+  width: 70%;
 }
 
 /*########################*/
@@ -234,6 +249,7 @@ section#newsBoard {
   background-color: #328181;
   border: 5px solid #235F5F;
   border-radius: 10px;
+  box-shadow: black 0 0 15px;
 }
 
 section#newsBoard h2 {
@@ -275,6 +291,7 @@ section#affiliates {
   background-color: #328181;
   border: 5px solid #235F5F;
   border-radius: 10px;
+  box-shadow: black 0 0 15px;
 }
 
 section#affiliates h2 {
@@ -301,6 +318,7 @@ aside#eventsPan {
   background-color: #328181;
   border: 5px solid #235F5F;
   border-radius: 10px;
+  box-shadow: black 0 0 15px;
 }
 
 aside#eventsPan h2 {
@@ -314,11 +332,12 @@ section#events {
 
   flex-flow: column wrap;
 
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 section.event {
   margin-bottom: 10px;
+  width: 100%;
 }
 
 section.event:last-of-type {
@@ -329,6 +348,23 @@ section#events h3 {
   padding: 5px 0;
   font-size: 1.5em;
   line-height: 1em;
+}
+
+section#events a {
+  float: left;
+  clear: left;
+  margin-top: 10px;
+  padding: 5px;
+  color: #235F5F;
+  font-size: 1.25em;
+  text-decoration-line: none;
+  background-color: #99CCCC;
+  border: 5px solid #235F5F;
+
+}
+
+section#events a:hover, section#events a:active {
+  box-shadow: black 0 0 5px;
 }
 
 /*####################*/
