@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+  Avansies Animations Stylesheet
+  Author: Lucas Eastman
+  Date: 12.17.17
+
+  Filename: av_animations.css
+*/
+
+/* Nav animations */
+
+/*@keyframes color {
+  100% {
+    width: 30%;
+  }
+}
+
+nav ul a:hover {
+  animation-name: color;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}*/
+
+nav#headerNav ul a {
+  -webkit-transition: background-color 0.25s, width 2s;
+    transition: background-color 0.25s, width 2s;
+}
+
+aside#linksPan section a {
+  -webkit-transition: box-shadow 0.5s, transform 1s;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
