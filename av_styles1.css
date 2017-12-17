@@ -73,6 +73,7 @@ nav#headerNav ul a:hover {
   position: relative;
   background-color: #4CBABA;
   color: #235F5F;
+  width: 30%;
 }
 
 /*nav#headerNav ul a:first-of-type {
